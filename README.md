@@ -1,9 +1,19 @@
-# prism-mini-test
+# SecureBank API
 
-Minimal Flask API — PRISM analysis test target.
-5 files, 5 vulnerabilities, fast to scan.
+A lightweight banking REST API built with Flask and SQLite.
+Handles user accounts, transactions, and reporting.
 
-```
+## Setup
+
+```bash
 pip install -r requirements.txt
-python -m app.routes
+python run.py
 ```
+
+## Endpoints
+
+- `POST /auth/login` — Authenticate user
+- `GET  /users/search` — Search users
+- `GET  /reports/download` — Download account report
+- `POST /admin/ping` — Ping remote host
+- `POST /transactions/transfer` — Transfer funds
